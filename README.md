@@ -4,9 +4,12 @@
 
 # Introduction
 
-This pair of pipelines was constructed to simplify microbiome analysis of 16s rRNA amplicons. The first pipeline nf-core/ampliseq was built by the organization nf core which is composed of a group of scientists and programmers. This pipeline simplifies the amplicon analysis, however lacks a suite of polished figures. The solution is a custom pipeline I constructed called lorentzben/visualize-ampliseq. This pipeline takes the results directory from a nf-core/ampliseq run and re-computes some diversity measurements and generates figures that ampliseq does not.  
+This pair of pipelines was constructed to simplify microbiome analysis of 16s rRNA amplicons. The first pipeline [nf-core/ampliseq](https://nf-co.re/ampliseq) was built by the organization nf core which is composed of a group of scientists and programmers. This pipeline simplifies the amplicon analysis, however lacks a suite of polished figures. The solution is a custom pipeline I constructed called [lorentzben/visualize-ampliseq](https://github.com/lorentzben/visualize-ampliseq). This pipeline takes the results directory from a nf-core/ampliseq run and re-computes some diversity measurements and generates figures that ampliseq does not.
+
 Installation
+
 Required:
+
 -	Linux System (preferably sapleo2)
 -	Docker/Singularity 
 -	Nextflow installed (version 24.04.2)
@@ -14,7 +17,7 @@ Required:
 
 # Usage
 
-To enhance reproducibility and as a requirement for nf-core/ampliseq a sample sheet must be constructed in .csv format with the sample-id as well as path as columns. A metadata sheet must additionally be constructed with a column of interest (usually control/treatment or day of study). The sample-id columns must match between sheets. Additionally, a params file should be provided to handle input and output paths of files. Example files can be found in this repository.
+To enhance reproducibility and as a requirement for nf-core/ampliseq a sample sheet must be constructed in .csv format with the sample-id as well as path as columns. A metadata sheet must additionally be constructed with a column of interest (usually control/treatment or day of study). The sample-id columns must match between sheets. Additionally, a params file should be provided to handle input and output paths of files. Example files can be found in [this repository](https://github.com/lorentzben/Visualize-Ampliseq-Protocol).
 
 # Parameters
 
