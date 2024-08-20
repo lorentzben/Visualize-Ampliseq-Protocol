@@ -28,7 +28,7 @@ cd $SCRATCHDIR
 
 module load Nextflow/22.04.5
 nextflow run nf-core/ampliseq \
-        -r 2.4.0 \
+        -r 2.9.0 \
         -c $PROJECTDIR/gacrc.config \
         -profile slurm,singularity \
         -params-file $PROJECTDIR/ampliseq-param.yaml \
