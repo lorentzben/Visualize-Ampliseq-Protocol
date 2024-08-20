@@ -1,0 +1,13 @@
+#THIS IS AN EXAMPLE PARAMFILE IT WILL NOT RUN AS-IS. ANY VARIABLE STARTING WITH $ NEEDS TO BE REPLACED
+input: "$PROJECTDIR/mapping.tsv"
+metadata: "$PROJECTDIR/metadata.tsv"
+outdir: "$WORKDIR/$PROJECTOUTDIR"
+dada_ref_taxonomy: silva=138
+exclude_taxa: mitochondria,chloroplast
+min_frequency: 1
+min_sample: 1
+skip_cutadapt: true
+skip_ancom: true
+trunclenf: 242
+trunclenr: 218
+trunc_qmin: 25

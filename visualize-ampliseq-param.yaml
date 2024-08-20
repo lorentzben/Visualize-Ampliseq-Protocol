@@ -1,0 +1,14 @@
+#THIS IS AN EXAMPLE PARAMFILE IT WILL NOT RUN AS-IS. ANY VARIABLE STARTING WITH $ NEEDS TO BE REPLACED
+input: "$SCRATCHDIR/$PROJECTOUTDIR" 
+ioi: "Treatment" 
+metadata: $SCRATCHDIR/metadata.tsv" 
+outdir: "$WORKDIR"
+controls: "$PROJECTDIR/controls.tsv"
+ordioi: "$PROJECTDIR/ord_ioi.csv"
+rare: 10000
+srs: true
+negative: "NC"
+mock: "MOCK"
+report: true
+refSeq: "$WORKDIR/atcc_20_ref.qza"
+refTab: "$WORKDIR/expected-taxonomy.qza"
